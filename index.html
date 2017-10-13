@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>News App</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/framework7.ios.min.css">
-    <link rel="stylesheet" href="css/my-app.css">
-    <link href="css/framework7-icons.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>News App</title>
 
-    <!-- Vendor -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/framework7.ios.min.css">
+  <link rel="stylesheet" href="css/my-app.css">
+  <link href="css/framework7-icons.css" rel="stylesheet">
 
-  </head>
-  <body>
+  <!-- Vendor -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <div class="views tabs toolbar-through">
+</head>
 
-      <!-- Views -->
-      <div id="view-1" class="view view-main tab active"></div>
-      <div id="view-2" class="view tab"></div>
-      <div id="view-3" class="view tab"></div>
-      <div id="view-4" class="view tab"></div>
+<body>
 
-      <!-- Bottom Tabbar-->
-      <div class="toolbar tabbar tabbar-labels">
-        <div class="toolbar-inner">
-          <a href="#view-1" class="tab-link active"><i class="f7-icons">home</i><span class="tabbar-label">Home</span></a>
-          <a href="#view-2" class="tab-link"><i class="f7-icons">bars</i><span class="tabbar-label">Categories</span></a>
-          <a href="#view-3" class="tab-link"><i class="f7-icons">person</i><span class="tabbar-label">Profile</span></a>
-          <a href="#view-4" class="tab-link"> <i class="f7-icons">help</i><span class="tabbar-label">About</span></a>
-        </div>
+  <div id="login" class="login-screen modal-in"></div>
+
+  <div class="views tabs toolbar-through">
+
+    <!-- Views -->
+    <div id="view-1" class="view view-main tab active"></div>
+    <div id="view-2" class="view tab"></div>
+    <div id="view-3" class="view tab"></div>
+    <div id="view-4" class="view tab"></div>
+
+    <!-- Bottom Tabbar-->
+    <div class="toolbar tabbar tabbar-labels">
+      <div class="toolbar-inner">
+        <a href="#view-1" class="tab-link active"><i class="f7-icons">home</i><span class="tabbar-label">Home</span></a>
+        <a href="#view-2" class="tab-link"><i class="f7-icons">bars</i><span class="tabbar-label">Categories</span></a>
+        <a href="#view-3" class="tab-link"><i class="f7-icons">person</i><span class="tabbar-label">Profile</span></a>
+        <a href="#view-4" class="tab-link"> <i class="f7-icons">help</i><span class="tabbar-label">About</span></a>
       </div>
     </div>
+  </div>
 
-    <!-- JS files -->
-    <script type="text/javascript" src="js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-    <script type="text/javascript" src="js/load-views.js"></script>
+  <!-- JS files -->
+  <script type="text/javascript" src="js/framework7.min.js"></script>
+  <script type="text/javascript" src="js/my-app.js"></script>
+  <script type="text/javascript" src="js/load-views.js"></script>
 
-  </body>
+</body>
+
 </html>

@@ -1,5 +1,9 @@
 console.log('script.js works!');
 
+$.get( "../login.html", function( data ) {
+  $( "#login" ).html( data );
+});
+
 $.get( "../view1.html", function( data ) {
   $( "#view-1" ).html( data );
 });
