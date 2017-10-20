@@ -1,29 +1,45 @@
-<div class="pages">
-  <!-- Page, data-page contains page name-->
-  <div data-page="index-1" class="page">
-    <!-- Scrollable page content-->
-    <div class="page-content">
-      <div class="content-block-title">Welcome</div>
-      <div class="content-block">
-        <p>This is an example of tab bar application layout. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
-        <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
-        <p>And of course, your favorite panels are still here: <a href="#" class="open-panel">left</a> and <a href="#" data-panel="right" class="open-panel">right</a></p>
-        <p>Icons and their labels in tab bar below are just for example and don't related to their content.</p>
-        <button type="button" name="button" id="close">close</button>
+<div class="view view-main tab active">
+<div class="pages navbar-through toolbar-fixed">
+  <div data-page="index-1" class="page with-subnavbar">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="center">Title</div>
+        <div class="subnavbar">
+          <!-- Buttons row as tabs controller -->
+          <div class="buttons-row">
+            <!-- Link to 1st tab, active -->
+            <a href="#tab1" class="tab-link active button">Tab 1</a>
+            <!-- Link to 2nd tab -->
+            <a href="#tab2" class="tab-link button">Tab 2</a>
+            <!-- Link to 3rd tab -->
+            <a href="#tab3" class="tab-link button">Tab 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tabs, tabs wrapper -->
+    <div class="tabs-swipeable-wrap">
+      <div class="tabs">
+        <!-- Tab 1, active by default -->
+        <div id="tab1" class="page-content tab active">
+          <div class="content-block">
+            <p>This is tab 1 content</p>
+          </div>
+        </div>
+        <!-- Tab 2 -->
+        <div id="tab2" class="page-content tab">
+          <div class="content-block">
+            <p>This is tab 2 content</p>
+          </div>
+        </div>
+        <!-- Tab 3 -->
+        <div id="tab3" class="page-content tab">
+          <div class="content-block">
+            <p>This is tab 3 content</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<script>
-  $$('#close').on('click', function() {
-    console.log('close button pressed');
-    myApp.showIndicator();
-    FB.logout(function(response) {
-      // Person is now logged out
-      statusChangeCallback(response);
-      myApp.hideIndicator();
-    });
-
-  });
-</script>
+</div>

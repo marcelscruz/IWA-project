@@ -22,14 +22,60 @@
 
   <div id="login" class="login-screen modal-in"></div>
 
-  <div class="views tabs toolbar-through">
-
+  <div class="views tabs-animated-wrap toolbar-through">
+  <div class="tabs">
     <!-- Views -->
-    <div id="home" class="view view-main tab active"></div>
+    <div id="home" class="view view-main tab active">
+
+      <div class="pages navbar-through toolbar-fixed">
+        <div data-page="index-1" class="page with-subnavbar">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="center">Title</div>
+              <div class="subnavbar">
+                <!-- Buttons row as tabs controller -->
+                <div class="buttons-row">
+                  <!-- Link to 1st tab, active -->
+                  <a href="#tab1" class="tab-link active button">Tab 1</a>
+                  <!-- Link to 2nd tab -->
+                  <a href="#tab2" class="tab-link button">Tab 2</a>
+                  <!-- Link to 3rd tab -->
+                  <a href="#tab3" class="tab-link button">Tab 3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tabs, tabs wrapper -->
+          <div class="tabs-swipeable-wrap">
+            <div class="tabs">
+              <!-- Tab 1, active by default -->
+              <div id="tab1" class="page-content tab active">
+                <div class="content-block">
+                  <p>This is tab 1 content</p>
+                </div>
+              </div>
+              <!-- Tab 2 -->
+              <div id="tab2" class="page-content tab">
+                <div class="content-block">
+                  <p>This is tab 2 content</p>
+                </div>
+              </div>
+              <!-- Tab 3 -->
+              <div id="tab3" class="page-content tab">
+                <div class="content-block">
+                  <p>This is tab 3 content</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="new-story" class="view tab"></div>
     <div id="account" class="view tab"></div>
     <div id="json" class="view tab"></div>
 
+  </div>
     <!-- Bottom Tabbar-->
     <div class="toolbar tabbar tabbar-labels">
       <div class="toolbar-inner">
@@ -42,10 +88,11 @@
   </div>
 
   <!-- JS files -->
-  <script type="text/javascript" src="js/login.js"></script>
   <script type="text/javascript" src="js/framework7.min.js"></script>
   <script type="text/javascript" src="js/my-app.js"></script>
+  <script type="text/javascript" src="js/facebookOAuth.js"></script>
   <script type="text/javascript" src="js/load-views.js"></script>
+  <script type="text/javascript" src="js/news-api.js"></script>
 
 </body>
 
