@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/framework7.ios.min.css">
   <link rel="stylesheet" href="css/my-app.css">
   <link rel="stylesheet" href="css/framework7-icons.css">
+  <link rel="stylesheet" href="css/news.css">
+
 
   <!-- Vendor -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -20,12 +22,12 @@
 
 <body>
 
-  <div id="login" class="login-screen modal-in"></div>
+  <!-- <div id="login" class="login-screen modal-in"></div> -->
 
   <div class="views tabs-animated-wrap toolbar-through">
     <div class="tabs">
       <!-- Inner Views -->
-      <div id="home" class="view view-main tab active">
+      <div id="news" class="view view-main tab active">
 
         <div class="pages navbar-through toolbar-fixed">
           <div data-page="index-1" class="page with-subnavbar">
@@ -33,16 +35,16 @@
             <!-- Navbar -->
             <div class="navbar">
               <div class="navbar-inner">
-                <div class="center">Title</div>
+                <div class="center">News</div>
                 <div class="subnavbar">
                   <!-- Buttons row as tabs controller -->
                   <div class="buttons-row">
                     <!-- Link to 1st tab, active -->
-                    <a href="#tab1" class="tab-link active button">Tab 1</a>
+                    <a href="#sports" class="tab-link active button">Sports</a>
                     <!-- Link to 2nd tab -->
-                    <a href="#tab2" class="tab-link button">Tab 2</a>
+                    <a href="#business" class="tab-link button">Business</a>
                     <!-- Link to 3rd tab -->
-                    <a href="#tab3" class="tab-link button">Tab 3</a>
+                    <a href="#financial" class="tab-link button">Financial</a>
                   </div>
                 </div>
               </div>
@@ -53,24 +55,26 @@
             <div class="tabs-swipeable-wrap">
               <div class="tabs">
                 <!-- Tab 1, active by default -->
-                <div id="tab1" class="page-content tab active">
-                  <div class="content-block">
-                    <p>This is tab 1 content</p>
+                <div id="sports" class="page-content tab active">
+                  <div id="sports-cards" class="content-block">
                   </div>
                 </div>
+
                 <!-- Tab 2 -->
-                <div id="tab2" class="page-content tab">
+                <div id="business" class="page-content tab">
                   <div class="content-block">
                     <p>This is tab 2 content</p>
                   </div>
                 </div>
+
                 <!-- Tab 3 -->
-                <div id="tab3" class="page-content tab">
+                <div id="financial" class="page-content tab">
                   <div class="content-block">
                     <p>This is tab 3 content</p>
                   </div>
                 </div>
               </div>
+
             </div>
             <!-- Tabs, tabs wrapper -->
 
@@ -79,7 +83,7 @@
       </div>
       <!-- Inner Views  -->
 
-      <div id="new-story" class="view tab"></div>
+      <div id="add-story" class="view tab"></div>
       <div id="account" class="view tab"></div>
       <div id="json" class="view tab"></div>
 
@@ -89,8 +93,8 @@
     <!-- Bottom Tabbar-->
     <div class="toolbar tabbar tabbar-labels">
       <div class="toolbar-inner">
-        <a href="#home" class="tab-link active"><i class="f7-icons">home</i><span class="tabbar-label">Home</span></a>
-        <a href="#new-story" class="tab-link"><i class="f7-icons">add_round</i><span class="tabbar-label">New story</span></a>
+        <a href="#news" class="tab-link active"><i class="f7-icons">home</i><span class="tabbar-label">News</span></a>
+        <a href="#add-story" class="tab-link"><i class="f7-icons">add_round</i><span class="tabbar-label">Add story</span></a>
         <a href="#account" class="tab-link"><i class="f7-icons">person</i><span class="tabbar-label">Account</span></a>
         <a href="#json" class="tab-link"> <i class="f7-icons">help</i><span class="tabbar-label">JSON</span></a>
       </div>

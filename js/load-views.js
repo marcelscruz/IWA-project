@@ -2,12 +2,13 @@ $.get( "../login.html", function( data ) {
   $( "#login" ).html( data );
 });
 
-// $.get( "../home.html", function( data ) {
-//   $( "#home" ).html( data );
+// LOADED STRAIGHT FROM INDEX
+// $.get( "../news.html", function( data ) {
+//   $( "#news" ).html( data );
 // });
 
-$.get( "../new-story.html", function( data ) {
-  $( "#new-story" ).html( data );
+$.get( "../add-story.html", function( data ) {
+  $( "#add-story" ).html( data );
 });
 
 $.get( "../account.html", function( data ) {
