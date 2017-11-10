@@ -3,20 +3,40 @@
 function getNews (news, selector){
   $.each(news, function(i, value){
     $(selector).append(
-      ` <li class='card'>
-          <a href='#'>
+      `
+        <li class='card'>
+          <a href='#' data-index="${i}" class="open-popup">
             <div class='card-header'>
               <img src='${value.urlToImage}' width='100%'>
             </div>
             <div class='card-content'>
               <div class='card-content-inner'>${value.title}</div>
             </div>
-        </a>
+          </a>
         </li>
       `
     );
   });
 }
+
+$(document).on("click",".open-popup", function(e){
+  e.preventDefault();
+  console.log($(this)[0].dataset.index);
+  var num = 1;
+  num++;
+  $('#popup').replaceWith(
+    `
+      <div class="popup popup-about">
+        <div class="content-block">
+          <p>About</p>
+          <p><a href="#" class="close-popup">Close popup</a></p>
+          <p>worksssss!!!!</p>
+          <p>${num}</p>
+        </div>
+      </div>
+    `
+  );
+});
 
 $$.getJSON('https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=5ad08b376dc24ce8b8fbc2a1abcbd1c3',
   function (data) {
