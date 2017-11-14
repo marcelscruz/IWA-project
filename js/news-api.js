@@ -5,7 +5,7 @@ function getNews (news, selector){
     $(selector).append(
       `
         <li class='card'>
-          <a href='#' data-index="${i}" class="open-popup">
+          <a href='#news-details' data-index="${i}" class="tab-link active open-popup">
             <div class='card-header'>
               <img src='${value.urlToImage}' width='100%'>
             </div>
@@ -19,23 +19,39 @@ function getNews (news, selector){
   });
 }
 
+var num = 1;
+
 $(document).on("click",".open-popup", function(e){
   e.preventDefault();
   console.log($(this)[0].dataset.index);
-  var num = 1;
+
   num++;
-  $('#popup').replaceWith(
+
+{/* <div id="news-details" class="view tab"> */}
+
+  $('#news-details').html(
     `
-      <div class="popup popup-about">
-        <div class="content-block">
-          <p>About</p>
-          <p><a href="#" class="close-popup">Close popup</a></p>
-          <p>worksssss!!!!</p>
-          <p>${num}</p>
-        </div>
-      </div>
+        <p>${num}</p>
+        <a href="#news" class="tab-link">Go Back</a>
     `
   );
+
+  // num++;
+  //
+  // $('#popup').remove();
+  //
+  // $('#popup-about').replaceWith(
+  //   `
+  //     <div id="popup-about" class="popup popup-about">
+  //       <div class="content-block">
+  //         <p>About</p>
+  //         <p><a href="#" class="close-popup">Close popup</a></p>
+  //         <p>worksssss!!!!</p>
+  //         <p>${num}</p>
+  //       </div>
+  //     </div>
+  //   `
+  // );
 });
 
 $$.getJSON('https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=5ad08b376dc24ce8b8fbc2a1abcbd1c3',
