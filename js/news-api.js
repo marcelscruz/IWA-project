@@ -1,11 +1,26 @@
 // apiKey 5ad08b376dc24ce8b8fbc2a1abcbd1c3
 
+let sportsArray = [];
+let businessArray = [];
+let financialArray = [];
+let index;
+
 function getNews (news, selector){
+
+  if (selector === '#sports-cards') {
+    sportsArray = news;
+  } else if (selector === '#business-cards') {
+    businessArray = news;
+  } else if (selector === '#financial-cards') {
+    financialArray = news;
+  }
+
   $.each(news, function(i, value){
+
     $(selector).append(
       `
         <li class='card'>
-          <a href='#news-details' data-index="${i}" class="tab-link active open-popup">
+          <a href='#' data-index="${i}" class="item-link active open-popup">
             <div class='card-header'>
               <img src='${value.urlToImage}' width='100%'>
             </div>
@@ -19,45 +34,31 @@ function getNews (news, selector){
   });
 }
 
-var num = 1;
+myApp.onPageInit('news-details', function() {
+
+  $('#news-details').html(
+    `
+      <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+      <p>${index}</p>
+    `
+  )
+});
 
 $(document).on("click",".open-popup", function(e){
   e.preventDefault();
   console.log($(this)[0].dataset.index);
 
-  num++;
+  index = $(this)[0].dataset.index;
 
-{/* <div id="news-details" class="view tab"> */}
+  view1.router.load({url: "news-details.html"});
 
-  $('#news-details').html(
-    `
-        <p>${num}</p>
-        <a href="#news" class="tab-link">Go Back</a>
-    `
-  );
-
-  // num++;
-  //
-  // $('#popup').remove();
-  //
-  // $('#popup-about').replaceWith(
-  //   `
-  //     <div id="popup-about" class="popup popup-about">
-  //       <div class="content-block">
-  //         <p>About</p>
-  //         <p><a href="#" class="close-popup">Close popup</a></p>
-  //         <p>worksssss!!!!</p>
-  //         <p>${num}</p>
-  //       </div>
-  //     </div>
-  //   `
-  // );
 });
 
 $$.getJSON('https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=5ad08b376dc24ce8b8fbc2a1abcbd1c3',
   function (data) {
     let bbcSports = data.articles;
     getNews(bbcSports, '#sports-cards');
+
   }
 );
 
