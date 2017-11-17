@@ -17,3 +17,33 @@
 .card-header {
   padding: 0;
 }
+
+#news-details-outer {
+  /*background: blue;*/
+  padding: 0;
+}
+
+#news-details {
+  padding: 0;
+}
+
+#back-button {
+  /*background: green;*/
+  height: 5%;
+  width: 100%;
+  padding: 20px 10px 0;
+  position: fixed;
+}
+
+#news-details-inner {
+  /*background: red;*/
+  height: 95%;
+  padding: 10% 10px 60px;
+}
+
+.news-title {
+  color: #555;
+  font-size: 2em;
+  line-height: 1;
+  text-align: left;
+}
