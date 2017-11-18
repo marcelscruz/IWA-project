@@ -162,6 +162,13 @@
 		"oAP": "\/login.html",
 		"oF": 0
 		},
+	"\/news-details.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/news-details.html",
+		"oF": 0
+		},
 	"\/news.html": {
 		"cB": 0,
 		"ft": 8192,

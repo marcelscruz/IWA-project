@@ -2,11 +2,6 @@ $.get( "../login.html", function( data ) {
   $( "#login" ).html( data );
 });
 
-// LOADED STRAIGHT FROM INDEX
-// $.get( "../news.html", function( data ) {
-//   $( "#news" ).html( data );
-// });
-
 $.get( "../add-story.html", function( data ) {
   $( "#add-story" ).html( data );
 });

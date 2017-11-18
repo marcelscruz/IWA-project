@@ -16,7 +16,7 @@ function getNews (response, selector){
             data-urlToImage="${value.urlToImage}"
             data-publishedAt="${value.publishedAt}"
             class="item-link active open-popup">
-            
+
             <div class='card-header'>
               <img src='${value.urlToImage}' width='100%'>
             </div>
@@ -38,6 +38,9 @@ let index,
     urlToImage,
     publishedAt,
     date,
+    day,
+    month,
+    year,
     time;
 
 $(document).on("click",".open-popup", function(e){
@@ -52,7 +55,10 @@ $(document).on("click",".open-popup", function(e){
   url = $(this)[0].dataset.url;
   urlToImage = $(this)[0].dataset.urltoimage;
   publishedAt = $(this)[0].dataset.publishedat;
-  date = publishedAt.slice(0, publishedAt.indexOf('T'));
+  date = publishedAt.slice(0, publishedAt.indexOf('T')).split('-');
+  day = date[2];
+  month = date[1];
+  year = date[0];
   time = publishedAt.slice(publishedAt.indexOf('T') + 1, publishedAt.indexOf('Z'));
 
   newsView.router.load({url: "news-details.html"});
@@ -71,7 +77,7 @@ myApp.onPageInit('news-details', function() {
         <p class="news-title">${title}</p>
         <img src="${urlToImage}" width="100%">
         <p class="news-author">Author: ${author}</p>
-        <p class="news-published-at">Published ${date} at ${time}</p>
+        <p class="news-published-at">Published ${day}/${month}/${year} at ${time}</p>
         <p class="news-description">${description}</p>
         <a href="${url}">Full story</a>
       </div>
