@@ -1,6 +1,17 @@
 // apiKey 5ad08b376dc24ce8b8fbc2a1abcbd1c3
 
+let sportsArray = [];
+let businessArray = [];
+let financialArray = [];
+
 function getNews (response, selector){
+  if (selector === '#sports-cards') {
+    sportsArray = response;
+  } else if (selector === '#business-cards') {
+    businessArray = response;
+  } else if (selector === '#financial-cards') {
+    financialArray = response;
+  }
 
   $.each(response.articles, function(i, value){
 
@@ -46,7 +57,7 @@ let index,
 $(document).on("click",".open-popup", function(e){
   e.preventDefault();
 
-  console.log($(this)[0].dataset);
+  // console.log($(this)[0].dataset);
 
   index = $(this)[0].dataset.index;
   author = $(this)[0].dataset.author;
@@ -85,7 +96,10 @@ myApp.onPageInit('news-details', function() {
   )
 });
 
-$$.getJSON('https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=5ad08b376dc24ce8b8fbc2a1abcbd1c3',
+// https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=5ad08b376dc24ce8b8fbc2a1abcbd1c3
+// https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=5ad08b376dc24ce8b8fbc2a1abcbd1c3
+
+$$.getJSON('https://newsapi.org/v2/top-headlines?sources=espn&apiKey=5ad08b376dc24ce8b8fbc2a1abcbd1c3',
   function (data) {
     getNews(data, '#sports-cards');
   }

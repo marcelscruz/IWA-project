@@ -7,9 +7,66 @@
 <div class="pages navbar-through">
   <div data-page="index-2" class="page">
     <div class="page-content">
-      <div class="content-block">
-        <p>This is view 2</p>
+
+      <!-- <div class="content-block-title">Full Layout</div> -->
+      <div class="list-block">
+
+        <ul>
+
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon f7-icons">persons</i></div>
+              <div class="item-inner">
+                <div class="item-title label">Category</div>
+                <div class="item-input">
+                  <select>
+                    <option value="sports">Sports</option>
+                    <option value="business">Business</option>
+                    <option value="financial">Financial</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Text inputs -->
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon f7-icons">person</i></div>
+              <div class="item-inner">
+                <div class="item-title label">Title</div>
+                <div class="item-input">
+                  <input type="text" placeholder="Insert title">
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Description -->
+          <li class="align-top">
+            <div class="item-content">
+              <div class="item-media"><i class="icon f7-icons">chat</i></div>
+              <div class="item-inner">
+                <div class="item-title label">Story</div>
+                <div class="item-input">
+                  <textarea></textarea>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="row">
+          <div>
+            <button id="clear-story" class="button button-big button-red" onclick="clearStory()">Clear</button>
+          </div>
+          <div>
+            <button class="button button-big button-green" onclick="submitStory()">Submit</button>
+          </div>
+        </div>
+
       </div>
+
     </div>
   </div>
 </div>
