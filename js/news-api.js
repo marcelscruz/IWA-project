@@ -12,7 +12,9 @@ function getNews (response, selector){
   } else if (selector === '#financial-cards') {
     financialArray = response;
   }
+}
 
+function buildCards(response, selector) {
   $.each(response.articles, function(i, value){
 
     $(selector).append(
@@ -40,6 +42,16 @@ function getNews (response, selector){
     );
   });
 }
+
+// function createNewStory(selector) {
+//   if (selector === '#sports-cards') {
+//     sportsArray.articles[sportsArray.articles.length].title = 'marcel';
+//   } else if (selector === '#business-cards') {
+//     businessArray = response;
+//   } else if (selector === '#financial-cards') {
+//     financialArray = response;
+//   }
+// }
 
 let index,
     author,
@@ -90,7 +102,6 @@ myApp.onPageInit('news-details', function() {
         <p class="news-author">Author: ${author}</p>
         <p class="news-published-at">Published ${day}/${month}/${year} at ${time}</p>
         <p class="news-description">${description}</p>
-        <a href="${url}">Full story</a>
       </div>
     `
   )
@@ -102,17 +113,20 @@ myApp.onPageInit('news-details', function() {
 $$.getJSON('https://newsapi.org/v2/top-headlines?sources=espn&apiKey=5ad08b376dc24ce8b8fbc2a1abcbd1c3',
   function (data) {
     getNews(data, '#sports-cards');
+    buildCards(sportsArray, '#sports-cards');
   }
 );
 
 $$.getJSON('https://newsapi.org/v1/articles?source=business-insider&sortBy=top&apiKey=5ad08b376dc24ce8b8fbc2a1abcbd1c3',
   function (data) {
     getNews(data, '#business-cards');
+    buildCards(businessArray, '#business-cards');
   }
 );
 
 $$.getJSON('https://newsapi.org/v1/articles?source=financial-times&sortBy=top&apiKey=5ad08b376dc24ce8b8fbc2a1abcbd1c3',
   function (data) {
     getNews(data, '#financial-cards');
+    buildCards(financialArray, '#financial-cards');
   }
 );
