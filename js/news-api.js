@@ -7,11 +7,23 @@ let financialArray = [];
 function getNews (response, selector){
   if (selector === '#sports-cards') {
     sportsArray = response;
+    printJSON(response, 'Sports');
   } else if (selector === '#business-cards') {
     businessArray = response;
+    printJSON(response, 'Business');
   } else if (selector === '#financial-cards') {
     financialArray = response;
+    printJSON(response, 'Financial');
   }
+}
+
+function printJSON(json, section) {
+  $('#json-content').append(
+    `
+      <h3>${section} JSON</h3>
+      <pre>${JSON.stringify(json, null, 2)}</pre>
+    `
+  );
 }
 
 function buildCards(response, selector) {
@@ -42,16 +54,6 @@ function buildCards(response, selector) {
     );
   });
 }
-
-// function createNewStory(selector) {
-//   if (selector === '#sports-cards') {
-//     sportsArray.articles[sportsArray.articles.length].title = 'marcel';
-//   } else if (selector === '#business-cards') {
-//     businessArray = response;
-//   } else if (selector === '#financial-cards') {
-//     financialArray = response;
-//   }
-// }
 
 let index,
     author,
@@ -98,7 +100,7 @@ myApp.onPageInit('news-details', function() {
       </div>
       <div id="news-details-inner">
         <p class="news-title">${title}</p>
-        <img src="${urlToImage}" width="100%">
+        <img src="${urlToImage}" width="100%" onError="console.log('image failed');">
         <p class="news-author">Author: ${author}</p>
         <p class="news-published-at">Published ${day}/${month}/${year} at ${time}</p>
         <p class="news-description">${description}</p>

@@ -1,0 +1,10 @@
+#json-content {
+  max-width: 100%;
+  /*background: red;*/
+}
+
+#json-content pre {
+  font-size: 0.5rem;
+  /*white-space: initial;*/
+  word-wrap: break-word;
+}

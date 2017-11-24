@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="css/framework7-icons.css">
   <link rel="stylesheet" href="css/news.css">
   <link rel="stylesheet" href="css/add-story.css">
+  <link rel="stylesheet" href="css/account.css">
+  <link rel="stylesheet" href="css/json.css">
+
 
   <!-- Vendor -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -26,35 +29,29 @@
 
   <div class="views tabs-animated-wrap toolbar-through">
     <div id="tabs" class="tabs">
-      <!-- Inner Views -->
-      <div id="news" class="view view-main tab active">
+      <!-- Tabs -->
 
+      <!-- NEWS VIEW -->
+      <div id="news" class="view view-main tab active">
         <div class="pages navbar-through toolbar-fixed">
           <div class="page with-subnavbar" data-page="index-1">
 
-            <!-- Navbar -->
             <div class="navbar">
               <div class="navbar-inner">
                 <div class="center">News</div>
                 <div class="subnavbar">
-                  <!-- Buttons row as tabs controller -->
                   <div class="buttons-row">
-                    <!-- Link to 1st tab, active -->
                     <a href="#sports" class="tab-link active button">Sports</a>
-                    <!-- Link to 2nd tab -->
                     <a href="#business" class="tab-link button">Business</a>
-                    <!-- Link to 3rd tab -->
                     <a href="#financial" class="tab-link button">Financial</a>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Navbar -->
 
-            <!-- Tabs, tabs wrapper -->
             <div class="tabs-swipeable-wrap">
               <div class="tabs">
-                <!-- Tab 1, active by default -->
+
                 <div id="sports" class="page-content tab active">
                   <div class="content-block">
                     <div class='list-block cards-list'>
@@ -81,21 +78,98 @@
                     </div>
                   </div>
                 </div>
-              </div>
 
+              </div>
             </div>
-            <!-- Tabs, tabs wrapper -->
+          </div>
+        </div>
+      </div>
+      <!-- NEWS VIEW -->
+
+      <!-- ADD STORY VIEW -->
+      <div id="add-story" class="view tab">
+        <div class="pages navbar-through">
+          <div data-page="index-2" class="page">
+
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center"><span>Add Story</span></div>
+                <div class="subnavbar">
+                  <div class="buttons-row">
+                    <a href="#add-story-tab" class="tab-link active button">Add Story</a>
+                    <a href="#top-10-tab" class="tab-link button">Top 10</a>
+                    <a href="#current-authors-tab" class="tab-link button">Authors</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabs-swipeable-wrap">
+              <div class="tabs">
+
+                <div id="add-story-tab" class="page-content tab active new-story-tab">
+                </div>
+
+                <div id="top-10-tab" class="page-content tab new-story-tab">
+                  <div id="top-10-content" class="content-block">
+                    <h1>Top 10 stories</h1>
+                  </div>
+                </div>
+
+                <div id="current-authors-tab" class="page-content tab new-story-tab">
+                  <div id="current-authors-content" class="content-block">
+                    <h1>Current authors</h1>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ADD STORY VIEW -->
+
+      <div id="account" class="view tab">
+        <div class="pages">
+          <div data-page="index-3" class="page">
+
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center"><span>Account</span></div>
+              </div>
+            </div>
+
+            <div class="page-content">
+              <div id="account-content" class="content-block">
+
+                <div id="account-inner">
+                  <div id="profile-picture"></div>
+                  <div id="username"></div>
+                  <button type="button" name="button" id="logout">Log out</button>
+                </div>
+
+              </div>
+            </div>
 
           </div>
+        </div>
+      </div>
 
-        </div> <!-- Pages -->
-
-      </div> <!-- View -->
-      <!-- Inner Views  -->
-
-      <div id="add-story" class="view tab"></div>
-      <div id="account" class="view tab"></div>
-      <div id="json" class="view tab"></div>
+      <div id="json" class="view tab">
+        <div class="pages navbar-fixed">
+          <div data-page="index-4" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Settings</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div id="json-content" class="content-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
     <!-- Tabs -->
@@ -118,10 +192,11 @@
   <script type="text/javascript" src="js/framework7.min.js"></script>
   <script type="text/javascript" src="js/my-app.js"></script>
   <script type="text/javascript" src="js/facebookOAuth.js"></script>
-  <script type="text/javascript" src="js/load-views.js"></script>
+  <script type="text/javascript" src="js/load-views-and-tabs.js"></script>
   <script type="text/javascript" src="js/news-api.js"></script>
   <script type="text/javascript" src="js/add-story.js"></script>
-
+  <script type="text/javascript" src="js/account.js"></script>
+  <!-- JS files -->
 
 </body>
 

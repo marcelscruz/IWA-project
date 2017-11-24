@@ -1,5 +1,4 @@
-/*.select {
-  background: red;
-  border: 1px solid #555;
-  width: 100px;
-}*/
+.new-story-tab {
+  margin-top: 43px;
+  padding: 0 5px;
+}
