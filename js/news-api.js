@@ -20,7 +20,7 @@ function getNews (response, selector){
 function printJSON(json, section) {
   $('#json-content').append(
     `
-      <h3>${section} JSON</h3>
+      <h3>${section}</h3>
       <pre>${JSON.stringify(json, null, 2)}</pre>
     `
   );
@@ -43,7 +43,7 @@ function buildCards(response, selector) {
             class="item-link active open-popup">
 
             <div class='card-header'>
-              <img src='${value.urlToImage}' width='100%'>
+              <img src='${value.urlToImage}' width='100%' onError="this.onerror=null;this.src='../news-placeholder.png';">
             </div>
             <div class='card-content'>
               <div class='card-content-inner'>${value.title}</div>
