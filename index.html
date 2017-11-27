@@ -25,9 +25,20 @@
 
 <body>
 
-  <!-- <div id="login" class="login-screen modal-in"></div> -->
+  <div id="login" class="login-screen modal-in"></div>
+
+  <div id="popup-login" class="popup popup-login">
+    <div class="content-block">
+      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+      </fb:login-button>
+
+      <div id="status"></div>
+      <!-- <p><a href="#" class="close-popup">Close popup</a></p> -->
+    </div>
+  </div>
 
   <div class="views tabs-animated-wrap toolbar-through">
+
     <div id="tabs" class="tabs">
       <!-- Tabs -->
 

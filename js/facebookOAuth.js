@@ -1,20 +1,21 @@
 function statusChangeCallback(response) {
   if (response.status === 'connected') {
     getUserDetails();
-    myApp.closeModal();
+    myApp.closeModal('#login');
   } else {
-    document.getElementById('status').innerHTML = 'Please log ' +
-      'into this app.';
-    myApp.loginScreen();
+    setTimeout(function() {
+      myApp.popup('#popup-login');
+      myApp.hideIndicator();
+    }, 2000);
   }
 }
-
-
 
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
-    // console.log(response);
+    if (response.status === 'connected') {
+      myApp.closeModal('#popup-login');
+    }
   });
 }
 
