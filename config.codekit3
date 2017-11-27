@@ -39,6 +39,36 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/framework7.ios.colors-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/framework7.ios.colors-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/framework7.ios.colors.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/framework7.ios.colors-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/framework7.ios.colors.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/framework7.ios.colors.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/framework7.ios.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -46,6 +76,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/framework7.ios.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/index-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/index-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -79,6 +119,46 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/splash-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/splash-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/splash.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/splash-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/styles-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/styles-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/fonts\/Framework7Icons-Regular.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -107,6 +187,57 @@
 		"oAP": "\/fonts\/Framework7Icons-Regular.woff2",
 		"oF": 0
 		},
+	"\/images\/login.jpg": {
+		"ft": 16384,
+		"iS": 47731,
+		"oA": 0,
+		"oAP": "\/images\/login.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/login2.jpg": {
+		"ft": 16384,
+		"iS": 196418,
+		"oA": 0,
+		"oAP": "\/images\/login2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/news-placeholder.png": {
+		"ft": 32768,
+		"iS": 21338,
+		"oA": 0,
+		"oAP": "\/images\/news-placeholder.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/splash.jpg": {
+		"ft": 16384,
+		"iS": 180354,
+		"oA": 0,
+		"oAP": "\/images\/splash.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/splash2.jpg": {
+		"ft": 16384,
+		"iS": 420193,
+		"oA": 0,
+		"oAP": "\/images\/splash2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -118,7 +249,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/account-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -128,7 +259,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/add-story-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -138,7 +269,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/facebookOAuth-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -148,7 +279,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/framework7.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -158,7 +289,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/load-views-and-tabs-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -168,7 +299,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/my-app-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -178,8 +309,28 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/news-api-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/scripts-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/scripts.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/scripts-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -197,17 +348,6 @@
 		"oA": 2,
 		"oAP": "\/news-details.html",
 		"oF": 0
-		},
-	"\/news-placeholder.png": {
-		"ft": 32768,
-		"iS": 21338,
-		"oA": 0,
-		"oAP": "\/news-placeholder.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/tabs\/add-story-tab.html": {
 		"cB": 0,

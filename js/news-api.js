@@ -43,7 +43,7 @@ function buildCards(response, selector) {
             class="item-link active open-details">
 
             <div class='card-header'>
-              <img src='${value.urlToImage}' width='100%' onError="this.onerror=null;this.src='../news-placeholder.png';">
+              <img src='${value.urlToImage}' width='100%' onError="this.onerror=null;this.src='../images/news-placeholder.png';">
             </div>
             <div class='card-content'>
               <div class='card-content-inner'>${value.title}</div>
