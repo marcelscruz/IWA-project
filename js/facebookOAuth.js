@@ -1,5 +1,5 @@
 function statusChangeCallback(response) {
-
+  console.log(response.status);
   if (response.status === 'connected' && $('#login').hasClass('modal-in')) {
     getUserDetails();
     setTimeout(function() {

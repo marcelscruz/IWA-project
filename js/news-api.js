@@ -40,7 +40,7 @@ function buildCards(response, selector) {
             data-url="${value.url}"
             data-urlToImage="${value.urlToImage}"
             data-publishedAt="${value.publishedAt}"
-            class="item-link active open-popup">
+            class="item-link active open-details">
 
             <div class='card-header'>
               <img src='${value.urlToImage}' width='100%' onError="this.onerror=null;this.src='../news-placeholder.png';">
@@ -68,7 +68,7 @@ let index,
     year,
     time;
 
-$(document).on("click",".open-popup", function(e){
+$(document).on("click",".open-details", function(e){
   e.preventDefault();
 
   // console.log($(this)[0].dataset);
