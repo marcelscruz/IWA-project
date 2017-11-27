@@ -25,15 +25,20 @@
 
 <body>
 
+  <!-- SPLASH SCREEN -->
   <div id="login" class="login-screen modal-in"></div>
 
+  <!-- LOGIN PAGE -->
   <div id="popup-login" class="popup popup-login">
     <div class="content-block">
       <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
       </fb:login-button>
+    </div>
+  </div>
 
-      <div id="status"></div>
-      <!-- <p><a href="#" class="close-popup">Close popup</a></p> -->
+  <!-- WELCOME SCREEN -->
+  <div id="popup-welcome" class="popup popup-welcome">
+    <div id="popup-welcome-content" class="content-block">
     </div>
   </div>
 

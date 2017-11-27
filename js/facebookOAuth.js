@@ -1,7 +1,22 @@
 function statusChangeCallback(response) {
-  if (response.status === 'connected') {
+
+  if (response.status === 'connected' && $('#login').hasClass('modal-in')) {
     getUserDetails();
-    myApp.closeModal('#login');
+    setTimeout(function() {
+      myApp.popup('#popup-welcome');
+    }, 1000);
+    setTimeout(function() {
+      myApp.closeModal('#login');
+      myApp.closeModal('#popup-welcome');
+    }, 4000);
+
+  } else if (response.status === 'connected' && !$('#login').hasClass('modal-in')) {
+    myApp.popup('#popup-welcome');
+    setTimeout(function() {
+      myApp.closeModal('#popup-welcome');
+      myApp.closeModal('#popup-login');
+    }, 3000);
+
   } else {
     setTimeout(function() {
       myApp.popup('#popup-login');
@@ -11,11 +26,9 @@ function statusChangeCallback(response) {
 }
 
 function checkLoginState() {
+  // myApp.showIndicator();
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
-    if (response.status === 'connected') {
-      myApp.closeModal('#popup-login');
-    }
   });
 }
 
@@ -73,4 +86,6 @@ function printUserDetails(name, url) {
   );
 
   $('#username').html(name);
+
+  $('#popup-welcome-content').html('Welcome back ' + name + '!');
 };
