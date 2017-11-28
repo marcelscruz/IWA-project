@@ -1,0 +1,48 @@
+#popup-welcome {
+  /*background: #426f42;*/
+  /*background: #394c42;*/
+  background: #364b5e;
+  display: flex;
+  justify-content: center;
+}
+
+#popup-welcome-content {
+  background: none;
+}
+
+#popup-welcome p {
+  color: #ddd;
+  font-size: 2rem;
+  line-height: 1rem;
+  position: relative;
+  top: 100px;
+  font-family: 'Slabo 27px', serif;
+}
+
+#welcome-text-1 {
+  position: relative;
+  left: -30px;
+}
+
+#welcome-text-2 {
+  font-size: 3rem !important;
+  position: relative;
+  left: 0px;
+}
+
+#welcome-text-3 {
+  position: relative;
+  left: 50px;
+}
+
+#welcome-text-4 {
+  position: relative;
+  left: 100px;
+}
+
+#welcome-text-5 {
+  font-size: 4rem !important;
+  position: relative;
+  left: 180px;
+  margin-top: 100px
+}

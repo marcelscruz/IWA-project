@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+.cards-list ul {
+  margin-top: -3px;
+  margin-bottom: 15px;
+}
+
 .card {
   width: 100%;
   margin: 10px 0;

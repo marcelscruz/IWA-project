@@ -1,0 +1,37 @@
+#popup-login {
+  background: #364b5e;
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+}
+
+#popup-login .content-block{
+  background: red;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#popup-login p {
+  font-size: 1rem;
+  position: relative;
+  margin: 0;
+  top: 150px;
+}
+
+#popup-login #preloader {
+  text-align: center;
+  height: 60px;
+  background: green;
+  position: relative;
+  top: 220px;
+}
+
+#popup-login #preloader .preloader {
+  display: none;
+}
+
+.fb-login-button {
+  position: relative;
+  top: 300px;
+}

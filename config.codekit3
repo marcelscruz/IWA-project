@@ -99,6 +99,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/login.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/login-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/my-app.css": {
 		"aP": 1,
 		"bl": 0,
@@ -159,6 +169,26 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/welcome-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/welcome-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/welcome.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/welcome-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/fonts\/Framework7Icons-Regular.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -216,6 +246,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/images\/splash-final.jpg": {
+		"ft": 16384,
+		"iS": 302821,
+		"oA": 0,
+		"oAP": "\/images\/splash-final.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/splash.jpg": {

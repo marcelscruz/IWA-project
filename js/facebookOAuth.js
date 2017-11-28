@@ -1,13 +1,21 @@
+// Fade In for spinner in Splash Screen
+setTimeout(function() {
+  $('#splash-screen #preloader').fadeIn(2500);
+}, 500);
+
 function statusChangeCallback(response) {
-  // console.log(response.status);
+  console.log(response.status);
   if (response.status === 'connected' && $('#login').hasClass('modal-in')) {
     getUserDetails();
     setTimeout(function() {
       myApp.popup('#popup-welcome');
+      console.log(1000);
     }, 1000);
     setTimeout(function() {
       myApp.closeModal('#login');
       myApp.closeModal('#popup-welcome');
+      // myApp.closeModal('#popup-login');
+      console.log('4000');
     }, 4000);
 
   } else if (response.status === 'connected' && !$('#login').hasClass('modal-in')) {
@@ -19,16 +27,25 @@ function statusChangeCallback(response) {
 
   } else {
     setTimeout(function() {
-      myApp.popup('#popup-login');
       myApp.hideIndicator();
+      myApp.popup('#popup-login');
+      console.log('else');
     }, 2000);
   }
 }
 
 function checkLoginState() {
-  // myApp.showIndicator();
+  // $('#popup-login #preloader').fadeIn(2500);
+  console.log('works');
   FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
+
+    setTimeout(function() {
+        statusChangeCallback(response);
+        setTimeout(function() {
+            myApp.closeModal('#popup-login');
+        }, 1000);
+        // $('#popup-login #preloader').fadeOut(500);
+    }, 1000);
   });
 }
 
@@ -57,6 +74,14 @@ window.fbAsyncInit = function() {
   js.src = "//connect.facebook.net/en_US/sdk.js";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+// (function(d, s, id) {
+//   var js, fjs = d.getElementsByTagName(s)[0];
+//   if (d.getElementById(id)) return;
+//   js = d.createElement(s); js.id = id;
+//   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=122973101745992';
+//   fjs.parentNode.insertBefore(js, fjs);
+// }(document, 'script', 'facebook-jssdk'));
 
 function getUserDetails() {
   FB.api('/me', function(response) {
@@ -87,5 +112,5 @@ function printUserDetails(name, url) {
 
   $('#username').html(name);
 
-  $('#popup-welcome-content').html('Welcome back ' + name + '!');
+  $('#welcome-text-2').html(name + ',');
 };

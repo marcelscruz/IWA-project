@@ -24,14 +24,27 @@
   <!-- LOGIN PAGE -->
   <div id="popup-login" class="popup popup-login">
     <div class="content-block">
+      <p>Please login with your facebook account.</p>
       <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
       </fb:login-button>
+
+      <div id="preloader" class="col-25">
+        <span class="preloader preloader-white" style="width:42px; height:42px"></span>
+      </div>
+
+      <div class="fb-login-button" onlogin="checkLoginState();" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
+
     </div>
   </div>
 
   <!-- WELCOME SCREEN -->
   <div id="popup-welcome" class="popup popup-welcome">
     <div id="popup-welcome-content" class="content-block">
+      <p id="welcome-text-1">Hey</p>
+      <p id="welcome-text-2"></p>
+      <p id="welcome-text-3">it's good to</p>
+      <p id="welcome-text-4">see you back!</p>
+      <p id="welcome-text-5">:)</p>
     </div>
   </div>
 
@@ -45,7 +58,7 @@
         <div class="pages navbar-through toolbar-fixed">
           <div class="page with-subnavbar" data-page="index-1">
 
-            <div class="navbar">
+            <div class="navbar theme-blue">
               <div class="navbar-inner">
                 <div class="center">News</div>
                 <div class="subnavbar">
@@ -100,7 +113,7 @@
         <div class="pages navbar-through">
           <div data-page="index-2" class="page">
 
-            <div class="navbar">
+            <div class="navbar theme-blue">
               <div class="navbar-inner">
                 <div class="center"><span>Add Story</span></div>
                 <div class="subnavbar">
@@ -184,7 +197,7 @@
     <!-- Tabs -->
 
     <!-- Bottom Tabbar-->
-    <div class="toolbar tabbar tabbar-labels">
+    <div class="toolbar tabbar tabbar-labels theme-blue">
       <div class="toolbar-inner">
         <a href="#news" class="tab-link active"><i class="f7-icons">home</i><span class="tabbar-label">News</span></a>
         <a href="#add-story" class="tab-link"><i class="f7-icons">add_round</i><span class="tabbar-label">Add story</span></a>

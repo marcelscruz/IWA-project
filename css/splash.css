@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Marcellus');
-
 #splash-screen {
-  background: url('../images/splash2.jpg') no-repeat;
+  background: url('../images/splash-final.jpg') no-repeat;
   background-size: cover;
+  background-position: 25% 90%;
   justify-content: center;
 }
 
 .login-screen-title {
   margin-top: 10vh !important;
-  font-family: 'Marcellus', serif;
-  font-size: 3rem;
+  /*font-family: 'Marcellus', serif;*/
+  font-family: 'Caveat', cursive;
+  font-size: 5rem;
+  color: #eee;
 }
 
-#preloader {
+#splash-screen #preloader {
   text-align: center;
   margin-top: 25vh;
+  display: none;
 }
