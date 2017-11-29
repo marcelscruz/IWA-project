@@ -1,6 +1,6 @@
 // Fade In for spinner in Splash Screen
 setTimeout(function() {
-  $('#splash-screen #preloader').fadeIn(2500);
+  $('#splash-screen #preloader').fadeIn(2000);
 }, 500);
 
 function statusChangeCallback(response) {

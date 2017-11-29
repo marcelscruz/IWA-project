@@ -24,7 +24,7 @@ function clearStory() {
 
 $$.get('http://52.48.79.163/db.php?type=getmystories&id=122973101745992',
   function (data) {
-    printJSON(data, 'My stories');
+    printJSON(data, 'My Stories');
   }
 );
 
@@ -62,6 +62,6 @@ function createCurrentAuthorsList(response) {
 $$.getJSON('http://52.48.79.163/db.php?type=currentauthors',
   function (data) {
     createCurrentAuthorsList(data);
-    printJSON(data, 'Current authors');
+    printJSON(data, 'Current Authors');
   }
 );

@@ -99,6 +99,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/login-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/login-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/login.css": {
 		"aP": 1,
 		"bl": 0,
@@ -375,18 +385,18 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/login.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/login.html",
-		"oF": 0
-		},
 	"\/news-details.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/news-details.html",
+		"oF": 0
+		},
+	"\/splash.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/splash.html",
 		"oF": 0
 		},
 	"\/tabs\/add-story-tab.html": {

@@ -21,13 +21,13 @@
 
 #welcome-text-1 {
   position: relative;
-  margin-left: -30px;
+  margin-left: -10px;
 }
 
 #welcome-text-2 {
   font-size: 3rem !important;
   position: relative;
-  margin-left: 0px;
+  margin-left: 10px;
 }
 
 #welcome-text-3 {
@@ -37,7 +37,7 @@
 
 #welcome-text-4 {
   position: relative;
-  margin-left: 100px;
+  margin-left: 130px;
 }
 
 #welcome-text-5 {
