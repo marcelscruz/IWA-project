@@ -19,17 +19,19 @@
 <body class="layout-dark">
 
   <!-- SPLASH SCREEN -->
-  <div id="login" class="login-screen modal-in"></div>
+  <div id="splash" class="login-screen modal-in"></div>
 
   <!-- LOGIN PAGE -->
   <div id="popup-login" class="popup popup-login">
     <div class="content-block">
       <p>Please login with your facebook account.</p>
-      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-      </fb:login-button>
+      <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+      </fb:login-button> -->
 
       <div id="preloader" class="col-25">
-        <span class="preloader preloader-white" style="width:42px; height:42px"></span>
+        <div id="login-preloader">
+          <span  class="preloader preloader-white" style="width:42px; height:42px"></span>
+        </div>
       </div>
 
       <div class="fb-login-button" onlogin="checkLoginState();" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>

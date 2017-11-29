@@ -22,12 +22,12 @@
 #popup-login #preloader {
   text-align: center;
   height: 60px;
-  background: green;
+  /*background: green;*/
   position: relative;
   top: 220px;
 }
 
-#popup-login #preloader .preloader {
+#login-preloader {
   display: none;
 }
 

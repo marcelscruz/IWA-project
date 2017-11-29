@@ -1,6 +1,6 @@
 // Views
-$.get( "../login.html", function( data ) {
-  $( "#login" ).html( data );
+$.get( "../splash.html", function( data ) {
+  $( "#splash" ).html( data );
 });
 
 // Tabs

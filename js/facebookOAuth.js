@@ -4,48 +4,44 @@ setTimeout(function() {
 }, 500);
 
 function statusChangeCallback(response) {
-  console.log(response.status);
-  if (response.status === 'connected' && $('#login').hasClass('modal-in')) {
+  // console.log(response.status);
+  if (response.status === 'connected' && $('#splash').hasClass('modal-in')) {
     getUserDetails();
     setTimeout(function() {
       myApp.popup('#popup-welcome');
-      console.log(1000);
-    }, 1000);
+    }, 2000);
     setTimeout(function() {
-      myApp.closeModal('#login');
+      myApp.closeModal('#splash');
       myApp.closeModal('#popup-welcome');
-      // myApp.closeModal('#popup-login');
-      console.log('4000');
     }, 4000);
-
-  } else if (response.status === 'connected' && !$('#login').hasClass('modal-in')) {
-    myApp.popup('#popup-welcome');
+    // console.log('first if');
+  } else if (response.status === 'connected' && !$('#splash').hasClass('modal-in')) {
+    setTimeout(function() {
+      myApp.popup('#popup-welcome');
+    }, 2000);
     setTimeout(function() {
       myApp.closeModal('#popup-welcome');
-      myApp.closeModal('#popup-login');
-    }, 3000);
-
+    }, 4000);
+    console.log('second if');
   } else {
     setTimeout(function() {
       myApp.hideIndicator();
       myApp.popup('#popup-login');
-      console.log('else');
-    }, 2000);
+    }, 3000);
+    // console.log('else');
   }
 }
 
 function checkLoginState() {
-  // $('#popup-login #preloader').fadeIn(2500);
-  console.log('works');
+  $('#login-preloader').fadeIn(500);
+  // console.log('logout button pressed');
   FB.getLoginStatus(function(response) {
 
+    statusChangeCallback(response);
+
     setTimeout(function() {
-        statusChangeCallback(response);
-        setTimeout(function() {
-            myApp.closeModal('#popup-login');
-        }, 1000);
-        // $('#popup-login #preloader').fadeOut(500);
-    }, 1000);
+        myApp.closeModal('#popup-login');
+    }, 3000);
   });
 }
 
