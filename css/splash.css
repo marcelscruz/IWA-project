@@ -8,8 +8,9 @@
 .login-screen-title {
   margin-top: 10vh !important;
   /*font-family: 'Marcellus', serif;*/
-  font-family: 'Caveat', cursive;
-  font-size: 5rem;
+  /*font-family: 'Caveat', cursive;*/
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 3.5rem;
   color: #eee;
 }
 

@@ -6,17 +6,19 @@
 }
 
 #popup-login .content-block{
-  background: red;
+  background: #b9d3e8;
   height: 100%;
   text-align: center;
   position: relative;
 }
 
 #popup-login p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   position: relative;
   margin: 0;
-  top: 150px;
+  top: 100px;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #popup-login #preloader {
@@ -24,7 +26,7 @@
   height: 60px;
   /*background: green;*/
   position: relative;
-  top: 220px;
+  top: 180px;
 }
 
 #login-preloader {
@@ -33,6 +35,6 @@
 
 .fb-login-button {
   position: fixed;
-  top: 300px;
+  top: 250px;
   /*width: 500px;*/
 }

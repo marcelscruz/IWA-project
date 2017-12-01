@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+.navbar a {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .cards-list ul {
   margin-top: -3px;
   margin-bottom: 15px;

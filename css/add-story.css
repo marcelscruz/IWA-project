@@ -2,3 +2,12 @@
   margin-top: 43px;
   padding: 0 5px;
 }
+
+#submit-error {
+  height: 30px;
+  /*background: red;*/
+}
+
+#submit-error p {
+  color: #333;
+}

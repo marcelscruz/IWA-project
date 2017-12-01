@@ -8,16 +8,23 @@ function submitStory() {
   let story = $('#story-input')[0].value;
   let encoded = encodeURI('Author: ' + author + ' - Category: ' + category + ' - Title: ' + title + ' - Story: ' + story);
 
-  $.post("http://52.48.79.163/db.php?type=newstory&data=" + encoded + "&id=122973101745992");
+  if (title === '' || story === '') {
+    console.log('something is empty');
+    $('#submit-error').html('<p>Please fill all fields</p>');
+  } else {
+    $.post("http://52.48.79.163/db.php?type=newstory&data=" + encoded + "&id=122973101745992");
+    $('#submit-error').html('<p></p>');
+    myApp.alert('Your story was posted!', 'Success', function() {
+      clearStory();
+    });
+  }
 
-  myApp.alert('Your story was posted!', 'Success', function() {
-    clearStory();
-  });
 }
 
 function clearStory() {
   $('#title-input')[0].value = '';
   $('#story-input')[0].value = '';
+  $('#submit-error').html('<p></p>');
 }
 
 // My stories

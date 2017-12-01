@@ -22,7 +22,7 @@ function statusChangeCallback(response) {
     setTimeout(function() {
       myApp.closeModal('#popup-welcome');
     }, 4000);
-    console.log('second if');
+    // console.log('second if');
   } else {
     setTimeout(function() {
       myApp.hideIndicator();
@@ -41,6 +41,7 @@ function checkLoginState() {
 
     setTimeout(function() {
         myApp.closeModal('#popup-login');
+        $('#login-preloader').fadeOut(500);
     }, 3000);
   });
 }

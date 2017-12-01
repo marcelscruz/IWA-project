@@ -24,13 +24,11 @@
   <!-- LOGIN PAGE -->
   <div id="popup-login" class="popup popup-login">
     <div class="content-block">
-      <p>Please login with your facebook account.</p>
-      <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-      </fb:login-button> -->
+      <p>Please login with your<br>facebook account</p>
 
       <div id="preloader" class="col-25">
         <div id="login-preloader">
-          <span  class="preloader preloader-white" style="width:42px; height:42px"></span>
+          <span  class="preloader" style="width:42px; height:42px"></span>
         </div>
       </div>
 
@@ -73,7 +71,8 @@
               </div>
             </div>
 
-            <div class="tabs-swipeable-wrap">
+            <!-- <div class="tabs-swipeable-wrap"> -->
+            <div class="tabs-animated-wrap">
               <div class="tabs">
 
                 <div id="sports" class="page-content tab active">
@@ -128,7 +127,7 @@
               </div>
             </div>
 
-            <div class="tabs-swipeable-wrap">
+            <div class="tabs-animated-wrap">
               <div class="tabs">
 
                 <div id="add-story-tab" class="page-content tab active new-story-tab">
@@ -153,6 +152,7 @@
       </div>
       <!-- ADD STORY VIEW -->
 
+      <!-- ACCOUNT VIEW -->
       <div id="account" class="view tab">
         <div class="pages">
           <div data-page="index-3" class="page">
@@ -178,7 +178,9 @@
           </div>
         </div>
       </div>
+      <!-- ACCOUNT VIEW -->
 
+      <!-- JSON VIEW -->
       <div id="json" class="view tab">
         <div class="pages navbar-fixed">
           <div data-page="index-4" class="page">
@@ -194,6 +196,7 @@
           </div>
         </div>
       </div>
+      <!-- JSON VIEW -->
 
     </div>
     <!-- Tabs -->
@@ -213,7 +216,7 @@
   <!-- Views wrapper -->
 
   <!-- JS files -->
-  <script src="js/scripts.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
   <script type="text/javascript" src="js/framework7.min.js"></script>
   <script type="text/javascript" src="js/my-app.js"></script>
   <script type="text/javascript" src="js/facebookOAuth.js"></script>
