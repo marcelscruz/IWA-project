@@ -12,7 +12,7 @@ function submitStory() {
     console.log('something is empty');
     $('#submit-error').html('<p>Please fill all fields</p>');
   } else {
-    $.post("http://52.48.79.163/db.php?type=newstory&data=" + encoded + "&id=122973101745992");
+    $.get("http://52.48.79.163/db.php?type=newstory&data=" + encoded + "&id=122973101745992");
     $('#submit-error').html('<p></p>');
     myApp.alert('Your story was posted!', 'Success', function() {
       clearStory();
