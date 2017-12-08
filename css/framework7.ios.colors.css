@@ -2077,7 +2077,8 @@ html:not(.watch-active-state) .floating-button.color-blue:active, html:not(.watc
 }
 
 .color-green {
-  color: #4cd964;
+  /*color: #4cd964;*/
+  color: #28a82e;
 }
 
 .list-block .item-link.list-button.color-green, .list-button.color-green, .tabbar a.active.color-green, a.color-green {
@@ -2089,7 +2090,8 @@ html:not(.watch-active-state) .floating-button.color-blue:active, html:not(.watc
 }
 
 .color-green.button:not(.button-fill), .color-green.buttons-row .button {
-  border-color: #4cd964;
+  /*border-color: #4cd964;*/
+  border-color: #28a82e;
 }
 
 html:not(.watch-active-state) .color-green.button:not(.button-fill):active, html:not(.watch-active-state) .color-green.buttons-row .button:active, .color-green.button:not(.button-fill).active-state, .color-green.buttons-row .button.active-state {
@@ -2161,7 +2163,8 @@ html:not(.watch-active-state) .floating-button.color-green:active, html:not(.wat
 }
 
 .color-red {
-  color: #ff3b30;
+  /*color: #ff3b30;*/
+  color: #bc2d20;
 }
 
 .list-block .item-link.list-button.color-red, .list-button.color-red, .tabbar a.active.color-red, a.color-red {
@@ -2173,7 +2176,8 @@ html:not(.watch-active-state) .floating-button.color-green:active, html:not(.wat
 }
 
 .color-red.button:not(.button-fill), .color-red.buttons-row .button {
-  border-color: #ff3b30;
+  /*border-color: #ff3b30;*/
+  border-color: #bc2d20;
 }
 
 html:not(.watch-active-state) .color-red.button:not(.button-fill):active, html:not(.watch-active-state) .color-red.buttons-row .button:active, .color-red.button:not(.button-fill).active-state, .color-red.buttons-row .button.active-state {

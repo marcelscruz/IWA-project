@@ -9,8 +9,8 @@ function submitStory() {
   let encoded = encodeURI('Author: ' + author + ' - Category: ' + category + ' - Title: ' + title + ' - Story: ' + story);
 
   if (title === '' || story === '') {
-    console.log('something is empty');
-    $('#submit-error').html('<p>Please fill all fields</p>');
+    // console.log('something is empty');
+    $('#submit-error').html('<p>Please fill in all fields</p>');
   } else {
     $.get("http://52.48.79.163/db.php?type=newstory&data=" + encoded + "&id=122973101745992");
     $('#submit-error').html('<p></p>');

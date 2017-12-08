@@ -37,7 +37,7 @@
 }
 
 #back-button {
-  /*background: green;*/
+  background: inherit;
   height: 5%;
   width: 100%;
   padding: 20px 10px 0;
@@ -55,4 +55,15 @@
   font-size: 2em;
   line-height: 1;
   text-align: left;
+}
+
+.news-author, .news-published-at {
+  /*color: red !important;*/
+  line-height: 5px;
+  font-size: 0.8em;
+}
+
+.news-description {
+  /*color: green !important;*/
+  font-size: 1.1em;
 }

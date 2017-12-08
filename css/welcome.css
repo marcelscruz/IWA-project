@@ -11,7 +11,7 @@
 }
 
 #popup-welcome p {
-  color: #ddd;
+  color: #ddd !important;
   font-size: 2rem;
   line-height: 1rem;
   position: relative;

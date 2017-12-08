@@ -36,6 +36,6 @@ body {
   background: #ccc;
 }
 
-p, label, pre, #username, h1, div.item-title.label {
+p, label, pre, #username, h1, h3, div.item-title.label {
   color: #333 !important;
 }

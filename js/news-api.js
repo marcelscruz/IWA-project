@@ -81,10 +81,11 @@ $(document).on("click",".open-details", function(e){
   urlToImage = $(this)[0].dataset.urltoimage;
   publishedAt = $(this)[0].dataset.publishedat;
   date = publishedAt.slice(0, publishedAt.indexOf('T')).split('-');
+  time = publishedAt.slice(publishedAt.indexOf('T') + 1, publishedAt.indexOf('Z'));
+  dateFinal = date[2] + '/' + date[1] + '/' + date[0] + ' at ' + time;
   day = date[2];
   month = date[1];
   year = date[0];
-  time = publishedAt.slice(publishedAt.indexOf('T') + 1, publishedAt.indexOf('Z'));
 
   newsView.router.load({url: "news-details.html"});
 
@@ -93,16 +94,32 @@ $(document).on("click",".open-details", function(e){
 
 myApp.onPageInit('news-details', function() {
 
+  if (title === 'null') {
+    title = 'Title not available';
+  }
+
+  if (author === 'null') {
+    author = 'Not available';
+  }
+
+  if (date[0] === 'nul') {
+    dateFinal = 'Not available';
+  }
+
+  if(description === 'null') {
+    description = 'Description: Not available';
+  }
+
   $('#news-details').html(
     `
       <div id="back-button" class="left">
-        <a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a>
+        <a href="#" class="back link"> <i class="icon icon-back"></i><span> Back</span></a>
       </div>
       <div id="news-details-inner">
         <p class="news-title">${title}</p>
         <img src="${urlToImage}" width="100%" onError="console.log('image failed');">
         <p class="news-author">Author: ${author}</p>
-        <p class="news-published-at">Published ${day}/${month}/${year} at ${time}</p>
+        <p class="news-published-at">Published: ${dateFinal}</p>
         <p class="news-description">${description}</p>
       </div>
     `
