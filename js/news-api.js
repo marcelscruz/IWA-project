@@ -113,7 +113,7 @@ myApp.onPageInit('news-details', function() {
   $('#news-details').html(
     `
       <div id="back-button" class="left">
-        <a href="#" class="back link"> <i class="icon icon-back"></i><span> Back</span></a>
+        <a href="#" class="back link"><span>Go Back</span></a>
       </div>
       <div id="news-details-inner">
         <p class="news-title">${title}</p>

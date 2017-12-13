@@ -37,11 +37,22 @@
 }
 
 #back-button {
-  background: inherit;
+  /*background: inherit;*/
+  background: #333;
   height: 5%;
   width: 100%;
   padding: 20px 10px 0;
   position: fixed;
+  /*color: #507a9a !important;*/
+}
+
+#back-button a {
+  color: #507a9a !important;
+  text-decoration: none;
+}
+
+#back-button span {
+  font-weight: 500;
 }
 
 #news-details-inner {
