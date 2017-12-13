@@ -52,14 +52,14 @@
 }
 
 #back-button i {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 #back-button span {
   font-weight: 500;
   font-size: 1.0rem;
-  /*margin-top: 5px !important;
-  line-height: 2rem;*/
+  position: relative;
+  top: 1px;
 }
 
 #news-details-inner {
