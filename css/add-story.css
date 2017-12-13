@@ -36,3 +36,13 @@
 #clear-story, #submit-story {
   width: 100px;
 }
+
+#clear-story {
+  background: #bc2d20;
+  color: #eee;
+}
+
+#submit-story {
+  background: #28a82e;
+  color: #eee;
+}
