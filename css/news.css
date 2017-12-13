@@ -51,8 +51,15 @@
   text-decoration: none;
 }
 
+#back-button i {
+  font-size: 0.8rem;
+}
+
 #back-button span {
   font-weight: 500;
+  font-size: 1.0rem;
+  /*margin-top: 5px !important;
+  line-height: 2rem;*/
 }
 
 #news-details-inner {
